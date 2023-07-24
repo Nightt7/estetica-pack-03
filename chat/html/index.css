@@ -1,0 +1,214 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+@font-face{
+  font-family: nfont;
+  src: url("https://cdn.discordapp.com/attachments/928633777108947005/1062456804505813022/Montserrat-Regular.ttf")
+}
+
+* {
+  font-family: nfont;
+}
+
+* {
+	font-family: nfont;
+	margin: 0;
+	padding: 0;
+	border:1px ;
+	box-sizing: border-box;
+
+}
+
+#app {
+  font-family: nfont;
+  color: white;
+}
+
+.chat-window {
+  position: absolute;
+  top: 2.5%;
+  left: 1%;
+  width: 22%;
+  height: 20%;
+  max-width: 1000px;
+  background-color: rgba(0, 0, 0, 0.0);
+  text-shadow: 0 0 3px black;
+}
+
+.messagebox{
+  padding: 0px;
+  margin-bottom: 0px;
+  width: fit-content;
+
+}
+
+.message {
+  color: white;
+}
+
+.me_box {
+  width: fit-content;
+  font-size: 0.7vw;
+  background-color: rgba(248, 131, 131, 0.842);
+  box-shadow: 0 0 4px rgba(247, 118, 118, 0.842);
+  padding: .2vw .5vw;
+  text-shadow: 0px 0px 4px black;
+  border-left: .2vw solid white;
+  border-radius: .2vw;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  animation: animchat .4s forwards;
+}
+
+.do_box {
+  width: fit-content;
+  font-size: 0.7vw;
+  background-color: rgba(82, 83, 179, 0.842);
+  box-shadow: 0 0 4px rgba(71, 73, 212, 0.842);
+  padding: .2vw .5vw;
+  text-shadow: 0px 0px 4px black;
+  border-left: .2vw solid white;
+  border-radius: .2vw;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  animation: animchat .4s forwards;
+}
+
+.oop_box {
+  width: fit-content;
+  font-size: 0.7vw;
+  background-color: rgba(46, 46, 46, 0.842);
+  box-shadow: 0 0 4px rgba(46, 46, 46, 0.842);
+  padding: .2vw .5vw;
+  text-shadow: 0px 0px 4px black;
+  border-left: .2vw solid white;
+  border-radius: .2vw;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  animation: animchat .4s forwards;
+}
+
+.chat-messages {
+  font-family: nfont;
+  position: relative;
+  height: 120%;
+  font-size: 1.30vh;
+  margin: 0.2%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: .2vw;
+}
+
+.chat-input {
+  font-family: nfont;
+  font-size: 1.40vh;
+  position: absolute;
+  border-radius: 5px; 
+  top: 30%;
+  left: 0.7%;
+  width: 38%;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+.prefix {
+  font-family: nfont;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 1vh;
+  position: absolute;
+  margin-top: 1.5%;
+  margin-left: 1%;
+  left: 0.208%;
+}
+
+textarea {
+  font-family: nfont;
+  font-size: 1.2vh;
+  box-sizing: border-box;
+  padding: 1%;
+  padding-left: 3.8%;
+  color: white;
+  text-shadow: 1px 0.5px 1px black;
+  border-radius: .5vw;
+  box-shadow: 0 0 5px black;
+  border: 1px solid rgba(0, 0, 0, 0.459);
+  background: rgba(0, 3, 19, 0.897);
+  width: 55%;
+  height: 21.04%;
+  resize: none;
+  overflow: hidden;
+  animation: animarea .3s;
+}
+
+#chat-icon{
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 1.20vh;
+  margin-top: 1%;
+  left: 1%;
+  animation: animarea .4s;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+.multiline {
+  font-family: nfont;
+  white-space: pre-line;
+}
+
+.suggestions {
+  font-family: nfont;
+  list-style-type: none;
+  padding: 10px;
+  margin-top : .2vw;
+  font-size: 1.1vh;
+  box-sizing: border-box;
+  border-radius: .5vw;
+  box-shadow: 0 0 5px black;
+  border: 1px solid rgba(0, 0, 0, 0.459);
+  background: rgba(0, 3, 19, 0.897);
+  width: 55%;
+  overflow: hidden;
+  animation: animsug .4s forwards;
+}
+
+.suggestion {
+  margin-bottom: 0.5%;
+  background-color: rgb(150, 150, 150);
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 4px black;
+  box-shadow: 0 0 4px black;
+  width: fit-content;
+  padding: .2vw .2vw;
+  border-radius: .3vw;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes animchat {
+  0%{
+      opacity: 0;
+      transform: translateX(10vw);
+  }
+}
+
+@keyframes animarea {
+  0%{
+      opacity: 0;
+      transform: translateY(2vw);
+  }
+}
+
+@keyframes animsug {
+  0%{
+    opacity: 0;
+    transform: translateY(5vw);
+}
+}
