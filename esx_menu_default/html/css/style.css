@@ -1,0 +1,135 @@
+@font-face{
+    font-family: nfont;
+    src: url("https://cdn.discordapp.com/attachments/839958624340148314/1068256721291706458/Montserrat-Regular.ttf");
+}
+
+.menu {
+	box-shadow: 0 0 5px black;
+	border: 1px solid rgba(0, 0, 0, 0.459);
+	background: rgba(0, 3, 19, 0.897);
+	text-shadow: 0 0 4px black;
+	font-family: nfont;
+	border-radius: .4vw;
+	font-size: 27px;
+	padding: 12px;
+	min-width: 325px;
+	color: #fff;
+	text-align: left;
+	position: absolute;
+
+}
+
+.menu.align-left {
+	left: 40;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.menu.align-top-left {
+	left: 40;
+	top: 40;
+}
+
+.menu.align-top {
+	left: 50%;
+	top: 40;
+	transform: translate(-50%, 0);
+}
+
+.menu.align-top-right {
+	right: 10;
+	top: 40;
+}
+
+.menu.align-right {
+	right: 40;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.menu.align-bottom-right {
+	right: 40;
+	bottom: 40;
+}
+
+.menu.align-bottom {
+	left: 50%;
+	bottom: 40;
+	transform: translate(-50%, 0);
+}
+
+.menu.align-bottom-left {
+	left: 40;
+	bottom: 40;
+}
+
+.menu.align-center {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px rgb(255, 255, 255);
+	border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+	background: rgb(255, 255, 255);
+	border-radius: 5px;
+  }
+
+.menu .head {
+	background: rgba(0, 10, 68, 0.897);
+  	box-shadow: 0 0 5px black;
+	border-radius: 8px;
+	padding: 0.1vw;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	font-size: 0.7vw;
+	letter-spacing: 0.1vw;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 1vw;
+}
+
+.menu .menu-items {
+	background-color: none;
+	padding: 4.5px;
+	border-radius: 8px;
+	max-height: 450px;
+	overflow-y: auto;
+	animation: none;
+}
+
+.menu .menu-items .menu-item {
+	background: none;
+	display: block;
+	padding: 7px;
+	font-size: .65vw;
+	text-align: left;
+	text-indent: 5px;
+	margin-top: 5px;
+	color: #ffffff;
+	border-radius: 5px;
+	animation: none;
+}
+
+.menu .menu-items .menu-item.selected {
+	background: rgba(0, 10, 68, 0.897);
+	text-shadow: 0 0 2px black;
+	border-radius: .4vw;
+	color: white;
+	animation: animenu 0.5s;
+}
+
+@keyframes animenu {
+	0%{
+		opacity: 0;
+		transform: translateZ(.2vw);
+	}
+  }
