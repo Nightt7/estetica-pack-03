@@ -1,0 +1,72 @@
+
+
+@font-face {
+    font-family: mont;
+    src: url("https://cdn.discordapp.com/attachments/839958624340148314/1068256721291706458/Montserrat-Regular.ttf");
+}
+
+body{
+    overflow: hidden;
+}
+
+*{
+    color: white;
+}
+
+.noti{
+    position: absolute;
+    bottom: 2vw;
+    left: 1vw;
+    display: flex;
+    flex-direction: column;
+    transition: .4s;
+}
+
+.ncontainer {
+    font-family: mont;
+    background-color: rgba(0, 3, 19, 0.897);
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.609);
+    box-shadow: 0 0 4px black;
+    border-radius: .4vw;
+    min-width: 11vw;
+    padding: .25vw;
+    min-height: 2.5vw;
+    margin-bottom: .2vw;
+    margin-top: .2vw;
+    animation: anim-1 .4s forwards;
+}
+
+#ntitle {
+    width: max-content;
+    background-color: rgba(110, 110, 110, 0.253);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.096);
+    padding: .2vw .4vw;
+    font-size: .7vw;
+    border-radius: .4vw;
+}
+
+#infotext {
+    text-shadow: 0 0 2px black;
+    font-size: .7vw;
+    max-width: 11vw;
+    margin-top: .2vw;
+    margin-left: .1vw;
+    margin-bottom: .2vw;
+}
+
+#info-icon {
+    color:rgb(255, 255, 255);
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.609);
+    margin-right: .2vw;
+}
+
+@keyframes anim-1 {
+    0%{
+        opacity: 0;
+        transform: translateY(25vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0vw);
+    }
+}
